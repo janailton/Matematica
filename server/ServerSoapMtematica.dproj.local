@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2020/02/28 16:01:04.000.098,=C:\Users\pc-windows\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/03/27 18:07:36.000.892,=C:\Users\pc-windows\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/04/08 14:04:42.000.506,=C:\Users\pc-windows\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/04/08 17:55:10.000.443,=C:\Users\pc-windows\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/04/23 10:33:27.000.758,=C:\Users\pc-windows\Documents\Embarcadero\Studio\Projects\FormUnit1.pas</Transaction>
+    <Transaction>2020/04/23 10:33:28.000.102,=C:\Users\pc-windows\Documents\Embarcadero\Studio\Projects\WebModuleUnit1.pas</Transaction>
+    <Transaction>2020/04/23 10:33:48.000.814,=C:\Users\pc-windows\Documents\Embarcadero\Studio\Projects\Service1Intf.pas</Transaction>
+    <Transaction>2020/04/23 10:33:48.000.752,=C:\Users\pc-windows\Documents\Embarcadero\Studio\Projects\Service1Impl.pas</Transaction>
+    <Transaction>2020/04/23 10:34:09.000.283,C:\Users\pc-windows\Documents\Embarcadero\Studio\Projects\Service1Intf.pas=D:\Programação\jan\Matematica\server\Service1Intf.pas</Transaction>
+    <Transaction>2020/04/23 10:34:12.000.255,C:\Users\pc-windows\Documents\Embarcadero\Studio\Projects\Service1Impl.pas=D:\Programação\jan\Matematica\server\Service1Impl.pas</Transaction>
+    <Transaction>2020/04/23 10:34:22.000.985,C:\Users\pc-windows\Documents\Embarcadero\Studio\Projects\FormUnit1.pas=D:\Programação\jan\Matematica\server\FormUnit1.pas</Transaction>
+    <Transaction>2020/04/23 10:34:22.000.985,C:\Users\pc-windows\Documents\Embarcadero\Studio\Projects\FormUnit1.dfm=D:\Programação\jan\Matematica\server\FormUnit1.dfm</Transaction>
+    <Transaction>2020/04/23 10:34:25.000.173,C:\Users\pc-windows\Documents\Embarcadero\Studio\Projects\WebModuleUnit1.dfm=D:\Programação\jan\Matematica\server\WebModuleUnit1.dfm</Transaction>
+    <Transaction>2020/04/23 10:34:25.000.173,C:\Users\pc-windows\Documents\Embarcadero\Studio\Projects\WebModuleUnit1.pas=D:\Programação\jan\Matematica\server\WebModuleUnit1.pas</Transaction>
+    <Transaction>2020/04/23 10:34:27.000.235,C:\Users\pc-windows\Documents\Embarcadero\Studio\Projects\Project1.dproj=D:\Programação\jan\Matematica\server\Project1.dproj</Transaction>
+    <Transaction>2020/04/23 10:35:09.000.139,=D:\Programação\jan\Matematica\server\Unit1.pas</Transaction>
+    <Transaction>2020/04/23 10:35:52.000.648,=D:\Programação\jan\Matematica\UnitdatamoduleDB.pas</Transaction>
+    <Transaction>2020/04/23 10:36:28.000.293,D:\Programação\jan\Matematica\server\Unit1.dfm=D:\Programação\jan\Matematica\server\UnitRemoteDataModule1.dfm</Transaction>
+    <Transaction>2020/04/23 10:36:28.000.293,D:\Programação\jan\Matematica\server\Unit1.pas=D:\Programação\jan\Matematica\server\UnitRemoteDataModule1.pas</Transaction>
+    <Transaction>2020/04/23 10:42:22.000.859,D:\Programação\jan\Matematica\server\Project1.dproj=D:\Programação\jan\Matematica\server\ServerSoapMtematica.dproj</Transaction>
+  </Transactions>
+</BorlandProject>

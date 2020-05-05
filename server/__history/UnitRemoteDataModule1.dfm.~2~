@@ -1,0 +1,5 @@
+object ServiceDataBase1: TServiceDataBase1
+  OldCreateOrder = False
+  Height = 270
+  Width = 319
+end

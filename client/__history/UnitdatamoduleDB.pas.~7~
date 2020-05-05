@@ -1,0 +1,45 @@
+unit UnitdatamoduleDB;
+
+interface
+
+uses
+  System.SysUtils, VCL.Dialogs,
+  System.Classes, Data.DB,
+  Data.FMTBcd, Datasnap.DBClient, Soap.SOAPConn, Data.SqlExpr;
+
+type
+  TdmDB = class(TDataModule)
+    DataSourceSoap: TDataSource;
+    SoapConnection1: TSoapConnection;
+    ClientDataSetSoap: TClientDataSet;
+    procedure ClientDataSetSoapAfterExecute(Sender: TObject;
+      var OwnerData: OleVariant);
+  private
+    { Private declarations }
+  public
+    function get_dataset_questao1: TDataSet;
+    // select COUNT(CORRECAO) FROM QUESTAO1 where CORRECAO = TRUE;
+  end;
+
+var
+  dmDB: TdmDB;
+
+implementation
+
+{%CLASSGROUP 'Vcl.Controls.TControl'}
+
+{$R *.dfm}
+
+procedure TdmDB.ClientDataSetSoapAfterExecute(Sender: TObject;
+  var OwnerData: OleVariant);
+begin
+  ClientDataSetSoap.ApplyUpdates(0);
+end;
+
+function TdmDB.get_dataset_questao1: TDataSet;
+
+begin
+  Result:= ClientDataSetSoap;
+end;
+
+end.

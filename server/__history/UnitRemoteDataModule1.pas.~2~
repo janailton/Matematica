@@ -1,0 +1,33 @@
+Unit UnitRemoteDataModule1;
+
+interface
+
+uses SysUtils, Classes, InvokeRegistry, Midas, SOAPMidas, SOAPDm, UnitdatamoduleDB;
+
+type
+  IServiceDataBase1 = interface(IAppServerSOAP)
+    ['{FC8C80E0-0E65-483C-9EBB-797945B71302}']
+  end;
+
+  TServiceDataBase1 = class(TSoapDataModule, IServiceDataBase1, IAppServerSOAP, IAppServer)
+  private
+  
+  public
+  
+  end;
+
+implementation
+
+
+
+{$R *.DFM}
+
+procedure TServiceDataBase1CreateInstance(out obj: TObject);
+begin
+ obj := TServiceDataBase1.Create(nil);
+end;
+
+initialization
+   InvRegistry.RegisterInvokableClass(TServiceDataBase1, TServiceDataBase1CreateInstance);
+   InvRegistry.RegisterInterface(TypeInfo(IServiceDataBase1));
+end.

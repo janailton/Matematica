@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2020/02/28 16:01:04.000.098,=C:\Users\pc-windows\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/03/27 18:07:36.000.892,=C:\Users\pc-windows\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/04/08 14:04:42.000.506,=C:\Users\pc-windows\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/04/08 17:55:10.000.443,=C:\Users\pc-windows\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/04/22 14:44:02.000.389,=C:\Users\pc-windows\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/04/22 14:45:07.000.668,D:\Programação\jan\Matematica\UnitPrincipal.pas=C:\Users\pc-windows\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/04/22 14:45:07.000.668,D:\Programação\jan\Matematica\UnitPrincipal.dfm=C:\Users\pc-windows\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2020/04/22 14:45:17.000.116,D:\Programação\jan\Matematica\Matematica.dproj=C:\Users\pc-windows\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2020/04/22 14:46:19.000.411,=D:\Programação\jan\Matematica\Unit1.pas</Transaction>
+    <Transaction>2020/04/22 14:47:00.000.020,D:\Programação\jan\Matematica\UnitdatamoduleDB.dfm=D:\Programação\jan\Matematica\Unit1.dfm</Transaction>
+    <Transaction>2020/04/22 14:47:00.000.020,D:\Programação\jan\Matematica\UnitdatamoduleDB.pas=D:\Programação\jan\Matematica\Unit1.pas</Transaction>
+    <Transaction>2020/04/22 16:39:05.000.334,=D:\Programação\jan\Matematica\Unit2.pas</Transaction>
+    <Transaction>2020/04/22 16:40:20.000.714,D:\Programação\jan\Matematica\Unit2.pas=D:\Programação\jan\Matematica\UnitDialogo1.pas</Transaction>
+    <Transaction>2020/04/22 16:40:20.000.714,D:\Programação\jan\Matematica\Unit2.dfm=D:\Programação\jan\Matematica\UnitDialogo1.dfm</Transaction>
+    <Transaction>2020/04/23 10:45:18.000.102,D:\Programação\jan\Matematica\client\MatematicaClientApp.dproj=D:\Programação\jan\Matematica\client\Matematica.dproj</Transaction>
+    <Transaction>2020/04/28 06:22:38.000.050,D:\Programação\jan\Matematica\client2\MatematicaClientApp.dproj=D:\Programação\jan\Matematica\client2\Questao2.dproj</Transaction>
+  </Transactions>
+</BorlandProject>

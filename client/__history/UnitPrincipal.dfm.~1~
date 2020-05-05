@@ -1,0 +1,116 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Qest'#245'es de Matem'#225'tica'
+  ClientHeight = 488
+  ClientWidth = 602
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poScreenCenter
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label1: TLabel
+    Left = 104
+    Top = 16
+    Width = 425
+    Height = 38
+    Caption = 'CALCULE O RESULTADO'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -32
+    Font.Name = 'Verdana'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 272
+    Top = 125
+    Width = 28
+    Height = 38
+    Caption = '+'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -32
+    Font.Name = 'Verdana'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object SpeedButton1: TSpeedButton
+    Left = 192
+    Top = 360
+    Width = 225
+    Height = 81
+    Caption = 'ok'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clRed
+    Font.Height = -37
+    Font.Name = 'Verdana'
+    Font.Style = []
+    Layout = blGlyphBottom
+    ParentFont = False
+    OnClick = SpeedButton1Click
+  end
+  object DBEdit1: TDBEdit
+    Left = 240
+    Top = 224
+    Width = 105
+    Height = 53
+    DataField = 'RESPOSTA'
+    DataSource = DataSource1
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -37
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 0
+  end
+  object DBEdit2: TDBEdit
+    Left = 144
+    Top = 117
+    Width = 73
+    Height = 53
+    DataField = 'N1'
+    DataSource = DataSource1
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clNavy
+    Font.Height = -37
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+    ReadOnly = True
+    TabOrder = 1
+    OnKeyPress = DBEdit2KeyPress
+    OnMouseDown = DBEdit2MouseDown
+    OnMouseEnter = DBEdit2MouseEnter
+  end
+  object DBEdit3: TDBEdit
+    Left = 376
+    Top = 117
+    Width = 81
+    Height = 53
+    DataField = 'N2'
+    DataSource = DataSource1
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clNavy
+    Font.Height = -37
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+    ReadOnly = True
+    TabOrder = 2
+    OnKeyPress = DBEdit2KeyPress
+    OnMouseDown = DBEdit2MouseDown
+    OnMouseEnter = DBEdit2MouseEnter
+  end
+  object DataSource1: TDataSource
+    Left = 592
+    Top = 16
+  end
+end

@@ -1,0 +1,108 @@
+unit UnitPrincipal;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Data.DB, Vcl.Grids, Vcl.DBGrids,
+  RzLabel, RzDBLbl, Vcl.StdCtrls, Vcl.Mask, Vcl.DBCtrls, Vcl.Buttons;
+
+type
+  TForm1 = class(TForm)
+    DataSource1: TDataSource;
+    Label1: TLabel;
+    Label2: TLabel;
+    DBEdit1: TDBEdit;
+    SpeedButton1: TSpeedButton;
+    DBEdit2: TDBEdit;
+    DBEdit3: TDBEdit;
+    procedure FormShow(Sender: TObject);
+    procedure SpeedButton1Click(Sender: TObject);
+    procedure DBEdit2KeyPress(Sender: TObject; var Key: Char);
+    procedure DBEdit2MouseEnter(Sender: TObject);
+    procedure DBEdit2MouseDown(Sender: TObject; Button: TMouseButton;
+      Shift: TShiftState; X, Y: Integer);
+    procedure Label3Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    procedure nova_questao;
+  end;
+
+var
+  Form1: TForm1;
+
+implementation
+
+{$R *.dfm}
+
+uses UnitdatamoduleDB, UnitDialogo1;
+
+procedure TForm1.DBEdit2KeyPress(Sender: TObject; var Key: Char);
+begin
+  Exit;
+end;
+
+procedure TForm1.DBEdit2MouseDown(Sender: TObject; Button: TMouseButton;
+  Shift: TShiftState; X, Y: Integer);
+begin
+  Exit;
+end;
+
+procedure TForm1.DBEdit2MouseEnter(Sender: TObject);
+begin
+  Exit;
+end;
+
+procedure TForm1.FormShow(Sender: TObject);
+begin
+  DataSource1.DataSet:= dmDB.get_dataset_questao1;
+  Randomize;
+  nova_questao;
+end;
+
+procedure TForm1.Label3Click(Sender: TObject);
+begin
+  dmDB.SoapConnection1.Connected:= not dmDB.SoapConnection1.Connected;
+end;
+
+procedure TForm1.nova_questao;
+var
+  i, j, a, b: integer;
+begin
+  j:= random(200);
+  a:= random(10);
+  for I := 0 to j do
+  begin
+    sleep(1);
+    b:= random(10)
+  end;
+
+  DataSource1.DataSet.Append;
+  DBEdit2.Text := IntToStr(a);
+  sleep(18);
+  DBEdit3.Text := IntToStr(b);
+  DBEdit1.Clear;
+  DBEdit1.Text:= '';
+  DBEdit1.SetFocus;
+end;
+
+procedure TForm1.SpeedButton1Click(Sender: TObject);
+begin
+  if (StrToInt(DBEdit2.Text) + StrToInt(DBEdit3.Text) = StrToInt(DBEdit1.Text)) then
+  begin
+    DataSource1.DataSet.FieldByName('CORRECAO').AsBoolean:= true;
+    FormDialogo1.ShowDialogo('zero.jpg', 'Você Acertou! Parabéns.');
+  end
+  else
+  begin
+   DataSource1.DataSet.FieldByName('CORRECAO').AsBoolean:= false;
+   FormDialogo1.ShowDialogo('belial.jpg', 'Você errou! Boa sorte da próxima vez.');
+   Beep;
+  end;
+
+  DataSource1.DataSet.Post;
+  nova_questao;
+end;
+
+end.

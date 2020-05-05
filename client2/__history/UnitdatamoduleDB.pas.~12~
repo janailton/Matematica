@@ -1,0 +1,95 @@
+unit UnitdatamoduleDB;
+
+interface
+
+uses
+  System.SysUtils, VCL.Dialogs,
+  System.Classes, Data.DB,
+  Data.FMTBcd, Datasnap.DBClient, Soap.SOAPConn, Data.SqlExpr;
+
+type
+  TdmDB = class(TDataModule)
+    DataSourceSoap: TDataSource;
+    SoapConnection1: TSoapConnection;
+    ClientDataSetSoap: TClientDataSet;
+    procedure ClientDataSetSoapAfterExecute(Sender: TObject;
+      var OwnerData: OleVariant);
+    procedure ClientDataSetSoapAfterEdit(DataSet: TDataSet);
+    procedure ClientDataSetSoapAfterDelete(DataSet: TDataSet);
+    procedure ClientDataSetSoapAfterClose(DataSet: TDataSet);
+    procedure ClientDataSetSoapAfterCancel(DataSet: TDataSet);
+    procedure ClientDataSetSoapAfterInsert(DataSet: TDataSet);
+    procedure ClientDataSetSoapAfterOpen(DataSet: TDataSet);
+    procedure ClientDataSetSoapAfterPost(DataSet: TDataSet);
+    procedure DataModuleCreate(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    function get_dataset_questao1: TDataSet;
+    // select COUNT(CORRECAO) FROM QUESTAO1 where CORRECAO = TRUE;
+  end;
+
+var
+  dmDB: TdmDB;
+
+implementation
+
+{%CLASSGROUP 'Vcl.Controls.TControl'}
+
+uses UnitPrincipal;
+
+{$R *.dfm}
+
+procedure TdmDB.ClientDataSetSoapAfterCancel(DataSet: TDataSet);
+begin
+  //ClientDataSetSoap.ApplyUpdates(0);
+end;
+
+procedure TdmDB.ClientDataSetSoapAfterClose(DataSet: TDataSet);
+begin
+  //ClientDataSetSoap.ApplyUpdates(0);
+end;
+
+procedure TdmDB.ClientDataSetSoapAfterDelete(DataSet: TDataSet);
+begin
+  //ClientDataSetSoap.ApplyUpdates(0);
+end;
+
+procedure TdmDB.ClientDataSetSoapAfterEdit(DataSet: TDataSet);
+begin
+  //ClientDataSetSoap.ApplyUpdates(0);
+end;
+
+procedure TdmDB.ClientDataSetSoapAfterExecute(Sender: TObject;
+  var OwnerData: OleVariant);
+begin
+  //ClientDataSetSoap.ApplyUpdates(0);
+end;
+
+procedure TdmDB.ClientDataSetSoapAfterInsert(DataSet: TDataSet);
+begin
+  //ClientDataSetSoap.ApplyUpdates(0);
+end;
+
+procedure TdmDB.ClientDataSetSoapAfterOpen(DataSet: TDataSet);
+begin
+  //ClientDataSetSoap.ApplyUpdates(0);
+end;
+
+procedure TdmDB.ClientDataSetSoapAfterPost(DataSet: TDataSet);
+begin
+  ClientDataSetSoap.ApplyUpdates(0);
+end;
+
+procedure TdmDB.DataModuleCreate(Sender: TObject);
+begin
+  SoapConnection1.URL:= 'http://' + Form1.EditURL.Text + ':20111/soap/IServiceDataBase1';
+end;
+
+function TdmDB.get_dataset_questao1: TDataSet;
+
+begin
+  Result:= ClientDataSetSoap;
+end;
+
+end.
